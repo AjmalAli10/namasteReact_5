@@ -8,8 +8,8 @@ import "./Body.css";
 //What is useState - /**A component need to remember things.
 /* when components often need to change what is on the screen*/
 const filterData = (input, restuarantes)=>{
-    // console.log("input - ",input)
-    // console.log("resturaant data before filter method - ",restuarantes)
+    console.log("input - ",input)
+    console.log("resturaant data before filter method - ",restuarantes)
     const data = restuarantes.filter((restuarant)=> (restuarant.data.name).toLowerCase().includes(input.toLowerCase()) );
     return data
 }
@@ -24,7 +24,7 @@ const Body = () =>{
 
             <button onClick={()=>{
                 const data = filterData(searchInput, restuarants);
-                // console.log("return data from filter - ",data)
+                console.log("return data from filter - ",data)
                 setfilterRestuarants(data);
 
                 //again set to orginal data as it was original data. because restuarants StateVariable has always be original data. So that If we cancel something out from the input 

@@ -33,3 +33,7 @@ Thumbs.db
 .idea/workspace.xml
 
 .vscode
+# Local Netlify folder
+.netlify
+
+.babelrc
