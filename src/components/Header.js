@@ -1,9 +1,10 @@
 import "./Header.css";
+import FoodLogo from "../assets/Food-Logo.png";
 const Header = () =>{
     return(
         <nav className="header">
             <a href="/">
-                <h2 className="nav-title">KHANA</h2>
+                <img src={FoodLogo}alt="logo" width="100" height="100"/>
             </a>
             <div className="nav-items">
                 <ul>
